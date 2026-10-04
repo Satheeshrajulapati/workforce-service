@@ -25,7 +25,7 @@ FROM eclipse-temurin:17-jre
 WORKDIR /app
 
 # Copy only the generated JAR from build stage
-COPY --from=build /app/target/*.jar app.jar
+COPY --from=build /app/target/*.jar app.jars
 
 # Documentation of the application's container port.
 # Render will supply PORT at runtime.
